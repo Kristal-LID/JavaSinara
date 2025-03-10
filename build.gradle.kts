@@ -26,6 +26,7 @@ dependencies {
     implementation("org.springframework.integration:spring-integration-http")
     implementation("org.springframework.integration:spring-integration-webflux")
     implementation("org.springframework.security:spring-security-messaging")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
