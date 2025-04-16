@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: letsdothishit
+
+
+homeworkconfig:
+  title: "default"
+  words:
+    - "democracy"
+    - "has"
+    - "landed"
+  num: 0
+
+  env-var: ${ENV_VAR:default}
