@@ -31,3 +31,4 @@ public class ConfigBean {
         return "создан AnotherOneTestBean";
     }
 }
+
