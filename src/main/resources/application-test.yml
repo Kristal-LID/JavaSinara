@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: letsdothishit
+
+
+homeworkconfig:
+  title: "test"
+  words:
+    - "test-wanna"
+    - "test-sleep"
+  num: 2
+
+  env-var: ${ENV_VAR:default}

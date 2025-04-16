@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: letsdothishit
+
+
+homeworkconfig:
+  title: "prod"
+  words:
+    - "prod-bruh"
+    - "prod-corp"
+    - "prod-production"
+  num: 3
+
+  env-var: ${EXAMPLE_TEST:default}
