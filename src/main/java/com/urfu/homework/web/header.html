@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <style>
+        body {
+            font-family: "Roboto Light", sans-serif;
+            margin: 20px;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Заголовки</h1>
+<ul>
+    <li th:each="header : ${headers}">
+        <b th:text="${header.key}"></b>: <span th:text="${header.value}"></span>
+    </li>
+</ul>
+</body>
+</html>
