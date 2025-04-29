@@ -1,10 +1,10 @@
-package com.urfu.firsthomework;
+package com.urfu.homework;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FirstHomeworkApplicationTests {
+class HomeworkApplicationTests {
 
     @Test
     void contextLoads() {
