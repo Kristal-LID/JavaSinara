@@ -1,0 +1,21 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus, metrics, foxwatch
+      base-path: /monitoring
+  endpoint:
+    health:
+      show-details: always
+    foxwatch:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+
+server:
+  port: 8080

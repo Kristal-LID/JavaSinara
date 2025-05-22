@@ -1,3 +1,4 @@
+
 plugins {
     java
     id("org.springframework.boot") version "3.4.3"
@@ -14,11 +15,19 @@ java {
     }
 }
 
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation("io.micrometer:micrometer-registry-prometheus")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.postgresql:postgresql")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+    implementation("org.springframework.boot:spring-boot-starter")
+    compileOnly("org.projectlombok:lombok")
+    annotationProcessor("org.projectlombok:lombok")
     implementation("org.springframework.boot:spring-boot-starter-integration")
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-web")
@@ -26,6 +35,7 @@ dependencies {
     implementation("org.springframework.integration:spring-integration-http")
     implementation("org.springframework.integration:spring-integration-webflux")
     implementation("org.springframework.security:spring-security-messaging")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
